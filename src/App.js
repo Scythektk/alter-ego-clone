@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+// import VideoContent from './components/VideoContent.js';
+import sample from './assets/sample.mp4';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <div className="video-container">
+                <video className="video-tag" autoPlay loop muted>
+                    <source src={sample} type="video/mp4" />
+                </video>
+                <button
+                    className="burger"
+                    onclick="this.classList.toggle('active');"
+                ></button>
+                <div className="heading">
+                    <div id="alter">ALTER</div>
+                    <div id="ego">EGO</div>
+                    <div id="undertitle">PROJECT GROUP</div>
+                </div>
+                <div className="sides">span</div>
+            </div>
+        </div>
+    );
 }
 
 export default App;
