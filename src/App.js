@@ -17,7 +17,10 @@ function App() {
                     <div id="ego">EGO</div>
                     <div id="undertitle">PROJECT GROUP</div>
                 </div>
-                <div className="sides">span</div>
+                <div className="languages">
+                    <div className="lang-child">ENG</div>
+                    <div className="lang-child">RU</div>
+                </div>
             </div>
         </div>
     );

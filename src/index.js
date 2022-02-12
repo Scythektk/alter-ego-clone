@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import './/styles/burger.css';
+import './/styles/navbar.css';
 import './/styles/header.css';
 import App from './App';
 

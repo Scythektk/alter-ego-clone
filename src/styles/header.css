@@ -1,8 +1,10 @@
 .heading {
+    position: fixed;
     color: rgba(255, 255, 255, 0.666);
     width: auto;
     text-align: justify;
-    margin-top: 20%;
+    align-self: center;
+    margin-left: 35%;
     vertical-align: middle;
     font-family: 'BioRhyme', serif;
     font-weight: 200;
@@ -20,6 +22,7 @@
     letter-spacing: 2vw;
     font-size: 11vw;
     text-align: center;
+    height: 13.5vw;
 }
 
 #undertitle {
@@ -30,5 +33,5 @@
     word-spacing: 1.8vw;
     line-height: 1px;
     text-align: center;
-    top: -30px;
+    top: 0px;
 }

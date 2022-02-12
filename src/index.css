@@ -10,7 +10,6 @@ body {
     width: 100vw;
     overflow-x: hidden;
     display: flex;
-    justify-content: center;
     align-items: flex-start;
     -webkit-user-select: none; /* Safari */
     -moz-user-select: none; /* Firefox */
