@@ -1,4 +1,3 @@
-// import VideoContent from './components/VideoContent.js';
 import sample from './assets/sample.mp4';
 
 function App() {
