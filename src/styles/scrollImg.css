@@ -1,8 +1,13 @@
 .img-flex-container {
     display: flex;
+    overflow: hidden;
+    scroll-snap-type: y proximity;
+    padding-top: 80vh;
+    padding-bottom: 50px;
 }
 
 .flexxed-img {
-    width: 33vw;
-    height: 100vh;
+    width: 33.33vw;
+    height: 101vh;
+    overflow: hidden;
 }

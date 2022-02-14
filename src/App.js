@@ -4,6 +4,35 @@ import medhatAyad from './assets/medhatAyad.jpg';
 import valeriaBoltneva from './assets/valeriaBoltneva.jpg';
 
 function App() {
+    var vidContainer = document.querySelector('.video-container');
+
+    function fadeOutOnScroll(element) {
+        var heading = document.querySelector('.heading');
+
+        if (!element) {
+            return;
+        }
+
+        var scrollTop = document.documentElement.scrollTop;
+
+        var opacity = 0.8;
+
+        opacity = 0.8 - scrollTop / 275;
+
+        if (opacity >= 0) {
+            heading.style.opacity = opacity;
+        }
+        if (opacity < 0) {
+            heading.style.opacity = 0;
+        }
+    }
+
+    function scrollHandler() {
+        fadeOutOnScroll(vidContainer);
+    }
+
+    window.addEventListener('scroll', scrollHandler);
+
     return (
         <div className="App">
             <div className="video-container">
@@ -60,6 +89,7 @@ function App() {
                     ></img>
                 </div>
             </div>
+            <div>hello </div>
         </div>
     );
 }

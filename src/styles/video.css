@@ -2,15 +2,15 @@
 
 .video-container {
     position: relative;
-    height: 100vh;
+    height: 101vh;
     width: 100vw;
     overflow-x: hidden;
     display: flex;
     align-items: flex-start;
-    -webkit-user-select: none; /* Safari */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE10+/Edge */
-    user-select: none; /* Standard */
+    /* ---**--- */
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
 }
 
 .video-container video {

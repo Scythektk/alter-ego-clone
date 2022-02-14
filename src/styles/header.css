@@ -1,8 +1,8 @@
 .heading {
-    position: absolute;
+    position: absolute; /* formerly absolute */
     display: flex;
     gap: 12vw;
-    color: rgba(255, 255, 255, 0.584);
+    color: rgba(255, 255, 255, 0.8);
     width: auto;
     text-align: justify;
     align-self: center;
@@ -11,6 +11,14 @@
     font-family: 'BioRhyme', serif;
     font-weight: 200;
     padding: -1;
+}
+
+.heading_black {
+    color: rgba(0, 0, 0, 0.584);
+}
+
+.heading_white {
+    color: rgba(255, 255, 255, 0.584);
 }
 
 #alter {
