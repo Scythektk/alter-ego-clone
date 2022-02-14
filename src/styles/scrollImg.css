@@ -1,0 +1,8 @@
+.img-flex-container {
+    display: flex;
+}
+
+.flexxed-img {
+    width: 33vw;
+    height: 100vh;
+}

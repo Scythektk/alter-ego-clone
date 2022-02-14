@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import './/styles/video.css';
 import './/styles/navbar.css';
 import './/styles/header.css';
+import './/styles/scrollImg.css';
 import App from './App';
 
 ReactDOM.render(

@@ -1,6 +1,8 @@
 .heading {
-    position: fixed;
-    color: rgba(255, 255, 255, 0.666);
+    position: absolute;
+    display: flex;
+    gap: 12vw;
+    color: rgba(255, 255, 255, 0.584);
     width: auto;
     text-align: justify;
     align-self: center;
@@ -34,4 +36,38 @@
     line-height: 1px;
     text-align: center;
     top: 0px;
+}
+
+.city {
+    display: flex;
+    margin-top: 3.5vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+        sans-serif;
+    letter-spacing: 2px;
+    font-size: 1vw;
+    cursor: pointer;
+    height: 25px;
+}
+
+.city:hover {
+    color: white;
+}
+
+#milan {
+    margin-left: -22vw;
+}
+
+.line {
+    margin-top: 0.5vw;
+    height: 2px;
+    width: 3vw;
+    border-top: 1px solid white;
+}
+
+#milan-line {
+    margin-right: 20px;
+}
+
+#moscow-line {
+    margin-left: 20px;
 }
