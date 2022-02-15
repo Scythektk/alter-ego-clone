@@ -4,12 +4,13 @@ import medhatAyad from './assets/medhatAyad.jpg';
 import valeriaBoltneva from './assets/valeriaBoltneva.jpg';
 
 function App() {
-    var vidContainer = document.querySelector('.video-container');
+    var videoContainer = document.querySelector('.video-container');
 
     function fadeOutOnScroll(element) {
         var heading = document.querySelector('.heading');
 
         if (!element) {
+            console.log('not working');
             return;
         }
 
@@ -28,7 +29,7 @@ function App() {
     }
 
     function scrollHandler() {
-        fadeOutOnScroll(vidContainer);
+        fadeOutOnScroll(videoContainer);
     }
 
     window.addEventListener('scroll', scrollHandler);
@@ -71,6 +72,7 @@ function App() {
                         className="flexxed-img"
                         id="img1"
                     ></img>
+                    <div className="img-text">Penthouses and Apartments</div>
                 </div>
                 <div>
                     <img
@@ -79,6 +81,7 @@ function App() {
                         className="flexxed-img"
                         id="img2"
                     ></img>
+                    <div className="img-text">Mansions and Estates</div>
                 </div>
                 <div>
                     <img
@@ -87,9 +90,30 @@ function App() {
                         className="flexxed-img"
                         id="img3"
                     ></img>
+                    <div className="img-text">Penthouses and Apartments</div>
                 </div>
             </div>
-            <div>hello </div>
+            <div className="quote-container">
+                <div className="positioner">
+                    <p className="quote">
+                        "So sweet honey that, finally, he is bitter. The excess
+                        taste kills the taste." Shakespeare.
+                    </p>
+                    <p className="quote">
+                        These words by the bard have passed down the centuries
+                        and found a different, deeper meaning in our days.
+                    </p>
+                    <p className="quote">
+                        Working professionally in the field of private
+                        architecture, creating 'volume' beauty, we know exactly
+                        when to stop.
+                    </p>
+                    <div className="find-flex-container">
+                        <div className="find-out">FIND OUT MORE</div>
+                        <div className="line" id="find-line"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }

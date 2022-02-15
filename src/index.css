@@ -6,7 +6,7 @@ body {
     -ms-user-select: none; /* IE10+/Edge */
     user-select: none; /* Standard */
     scroll-snap-type: mandatory;
-    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-points-y: repeat(101vh);
     scroll-snap-type: y mandatory;
 }
 

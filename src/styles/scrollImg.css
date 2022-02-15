@@ -1,13 +1,26 @@
 .img-flex-container {
     display: flex;
     overflow: hidden;
+    scroll-snap-align: start;
     scroll-snap-type: y proximity;
-    padding-top: 80vh;
-    padding-bottom: 50px;
 }
 
 .flexxed-img {
     width: 33.33vw;
     height: 101vh;
-    overflow: hidden;
+    /* overflow: hidden; */
+}
+
+.img-texts {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img-text {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    z-index: 22;
 }

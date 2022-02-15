@@ -5,6 +5,7 @@ import './/styles/video.css';
 import './/styles/navbar.css';
 import './/styles/header.css';
 import './/styles/scrollImg.css';
+import './/styles/quote.css';
 import App from './App';
 
 ReactDOM.render(
