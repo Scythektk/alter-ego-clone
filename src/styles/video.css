@@ -5,6 +5,7 @@
     height: 101vh;
     width: 100vw;
     overflow-x: hidden;
+    overflow-y: hidden;
     display: flex;
     align-items: flex-start;
     /* ---**--- */
@@ -23,7 +24,7 @@
     min-height: 100%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -68%);
+    transform: translate(-50%, -55%);
 }
 
 video {
