@@ -1,3 +1,4 @@
+import MovingTextFunction from './components/MovingText';
 import sample from './assets/sample.mp4';
 import houzlook from './assets/houzlook.jpg';
 import medhatAyad from './assets/medhatAyad.jpg';
@@ -36,14 +37,15 @@ function App() {
 
     return (
         <div className="App">
+            <div className="burger-bg"></div>
+            <button
+                className="burger"
+                onclick="this.classList.toggle('active');"
+            ></button>
             <div className="video-container">
                 <video className="video-tag" autoPlay loop muted>
                     <source src={sample} type="video/mp4" />
                 </video>
-                <button
-                    className="burger"
-                    onclick="this.classList.toggle('active');"
-                ></button>
                 <div className="heading">
                     <div className="city" id="milan">
                         <div className="line" id="milan-line"></div>
@@ -95,10 +97,12 @@ function App() {
             </div>
             <div className="quote-container">
                 <div className="positioner">
+                    <MovingTextFunction></MovingTextFunction>
                     <p className="quote">
                         "So sweet honey that, finally, he is bitter. The excess
                         taste kills the taste." Shakespeare.
                     </p>
+
                     <p className="quote">
                         These words by the bard have passed down the centuries
                         and found a different, deeper meaning in our days.
@@ -108,9 +112,10 @@ function App() {
                         architecture, creating 'volume' beauty, we know exactly
                         when to stop.
                     </p>
+
                     <div className="find-flex-container">
                         <div className="find-out">FIND OUT MORE</div>
-                        <div className="line" id="find-line"></div>
+                        <div className="line find-line"></div>
                     </div>
                 </div>
             </div>

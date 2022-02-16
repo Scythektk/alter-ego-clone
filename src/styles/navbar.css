@@ -12,6 +12,17 @@
     background: transparent;
     transition: all 250ms ease-out;
     cursor: pointer;
+    z-index: 99;
+}
+
+.burger-bg {
+    position: fixed;
+    z-index: 98;
+    background-color: rgba(0, 0, 0, 0.146);
+    top: 63px;
+    left: 4.5vw;
+    height: 36px;
+    width: 90px;
 }
 
 .burger:before,
@@ -20,7 +31,7 @@
     width: 50px;
     height: 1px;
     position: absolute;
-    background: rgb(216, 236, 255);
+    background: rgb(255, 255, 255);
     transition: all 250ms ease-out;
     will-change: transform;
 }
