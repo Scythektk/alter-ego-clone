@@ -41,6 +41,23 @@ function App() {
                 className="burger"
                 onclick="this.classList.toggle('active');"
             ></button>
+            <div className="contact-container">
+                <div className="dropup">
+                    <a href="#call" className="icon" id="phone">
+                        CALL US
+                    </a>
+                    <a href="#whatsapp" className="icon" id="whatsapp">
+                        WHATSAPP
+                    </a>
+                    <a href="#telegram" className="icon" id="telegram">
+                        TELEGRAM
+                    </a>
+                    <a href="#email" className="icon" id="email">
+                        EMAIL US
+                    </a>
+                </div>
+                <div className="contact-btn"></div>
+            </div>
             <Video></Video>
             <ParallelImages></ParallelImages>
             <Quote></Quote>

@@ -7,6 +7,7 @@ import './/styles/header.css';
 import './/styles/scrollImg.css';
 import './/styles/quote.css';
 import './/styles/gallery.css';
+import './/styles/contact.css';
 import App from './App';
 
 ReactDOM.render(

@@ -16,7 +16,7 @@ const SwiperGallery = () => {
         breakpoints: {
             // when window width is >= 320px
             320: {
-                slidesPerView: 1,
+                slidesPerView: 2,
                 spaceBetween: 5,
             },
 
@@ -33,6 +33,7 @@ const SwiperGallery = () => {
             prevEl: '.swiper-button-prev',
         },
     });
+    swiper.allowSlideNext = true;
     console.log(swiper.activeIndex);
     return (
         <div className="swiper">

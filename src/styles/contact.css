@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant&display=swap');
+
+.contact-container {
+    height: auto;
+    width: auto;
+}
+
+.contact-btn {
+    position: fixed;
+    z-index: 98;
+    bottom: 30px;
+    right: 30px;
+    height: 35px;
+    width: 35px;
+    background-color: rgba(157, 157, 157, 0.78);
+    background-image: url(../assets/phone.png);
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    background-position: 5px 5px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.contact-btn:hover {
+    background-color: rgba(203, 203, 203, 0.78);
+}
+
+.dropup {
+    position: fixed;
+    display: none;
+    background-color: rgb(199, 199, 199);
+    bottom: 65px;
+    right: 30px;
+    width: 150px;
+    height: auto;
+    z-index: 99;
+}
+
+.contact-container:hover .dropup {
+    display: block;
+}
+
+.dropup a:hover {
+    background-color: rgba(172, 171, 171, 0.78);
+}
+
+.dropup a {
+    color: black;
+    padding: 12px 18px;
+    padding-left: 36px;
+    font-size: 12px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Assistant', sans-serif;
+}
+
+.icon {
+    background-repeat: no-repeat;
+    background-position: 8px 10px;
+    background-size: 20px 20px;
+}
+
+#phone {
+    background-image: url(../assets/phone.png);
+}
+
+#whatsapp {
+    background-image: url(../assets/whatsapp.png);
+}
+
+#telegram {
+    background-image: url(../assets/telegram.png);
+}
+
+#email {
+    background-image: url(../assets/email.png);
+}
