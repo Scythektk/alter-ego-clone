@@ -2,7 +2,7 @@
     display: flex;
     position: fixed;
     margin-top: 80px;
-    margin-left: 6vw;
+    margin-left: 80px;
     justify-content: left;
     outline: none;
     height: 30px;
@@ -20,7 +20,7 @@
     z-index: 98;
     background-color: rgba(0, 0, 0, 0.146);
     top: 63px;
-    left: 4.5vw;
+    left: 60px;
     height: 36px;
     width: 90px;
 }
