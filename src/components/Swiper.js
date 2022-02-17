@@ -60,8 +60,8 @@ const SwiperGallery = () => {
                 </div>
             </div>
 
-            <div className="swiper-button-prev next"></div>
-            <div className="swiper-button-next prev"></div>
+            <div className="swiper-button-prev"></div>
+            <div className="swiper-button-next"></div>
         </div>
     );
 };
