@@ -1,13 +1,13 @@
-import Swiper, { Navigation } from 'swiper';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import vecislavasPopa1 from '../assets/vecislavasPopa1.jpg';
-import vecislavasPopa2 from '../assets/vecislavasPopa2.jpg';
-import vecislavasPopa3 from '../assets/vecislavasPopa3.jpg';
+import vecislavasPopaUno from '../assets/vecislavasPopaUno.jpg';
+import vecislavasPopaDos from '../assets/vecislavasPopaDos.jpg';
+import vecislavasPopaTres from '../assets/vecislavasPopaTres.jpg';
 import victoriaBorodinova from '../assets/victoriaBorodinova.jpg';
 import alexQian from '../assets/alexQian.jpg';
 import alexStaudinger from '../assets/alexStaudinger.jpg';
 import chaitGoli from '../assets/chaitGoli.jpg';
+import Swiper, { Navigation } from 'swiper';
+import 'swiper/css';
+import 'swiper/css/navigation';
 
 const SwiperGallery = () => {
     const swiper = new Swiper('.swiper', {
@@ -33,18 +33,21 @@ const SwiperGallery = () => {
             prevEl: '.swiper-button-prev',
         },
     });
-
+    console.log(swiper.activeIndex);
     return (
         <div className="swiper">
             <div className="swiper-wrapper">
                 <div className="swiper-slide">
-                    <img src={vecislavasPopa1} alt="Living Room" />
+                    <img src={vecislavasPopaUno} alt="Living Room" />
                 </div>
                 <div className="swiper-slide">
-                    <img src={vecislavasPopa2} alt="Kitchen and Living Room" />
+                    <img
+                        src={vecislavasPopaDos}
+                        alt="Kitchen and Living Room"
+                    />
                 </div>
                 <div className="swiper-slide">
-                    <img src={vecislavasPopa3} alt="TV" />
+                    <img src={vecislavasPopaTres} alt="TV" />
                 </div>
                 <div className="swiper-slide">
                     <img src={victoriaBorodinova} alt="Sofa and Table" />
