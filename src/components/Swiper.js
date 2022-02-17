@@ -1,10 +1,10 @@
 import vecislavasPopaUno from '../assets/vecislavasPopaUno.jpg';
 import vecislavasPopaDos from '../assets/vecislavasPopaDos.jpg';
 import vecislavasPopaTres from '../assets/vecislavasPopaTres.jpg';
-import victoriaBorodinova from '../assets/victoriaBorodinova.jpg';
-import alexQian from '../assets/alexQian.jpg';
-import alexStaudinger from '../assets/alexStaudinger.jpg';
-import chaitGoli from '../assets/chaitGoli.jpg';
+import victoriaBorodinova from '../assets/victoriaborodinova.jpg';
+import alexQian from '../assets/alexqian.jpg';
+import alexStaudinger from '../assets/alexstaudinger.jpg';
+import chaitGoli from '../assets/chaitgoli.jpg';
 import Swiper, { Navigation } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
