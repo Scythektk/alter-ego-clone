@@ -1,13 +1,15 @@
 html,
 body {
     margin: 0;
+
     -webkit-user-select: none; /* Safari */
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+/Edge */
     user-select: none; /* Standard */
-    scroll-snap-type: mandatory;
+
+    /* scroll-snap-type: mandatory;
     scroll-snap-points-y: repeat(101vh);
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y mandatory;*/
 }
 
 html::-webkit-scrollbar {

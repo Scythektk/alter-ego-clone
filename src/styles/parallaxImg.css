@@ -1,14 +1,20 @@
+.parallax-container {
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: start;
+}
+
+/* ---**--- */
+
 .img-flex-container {
     display: flex;
     overflow: hidden;
     scroll-snap-align: start;
-    scroll-snap-type: y proximity;
 }
 
 .flexxed-img {
     width: 33.33vw;
     height: 101vh;
-    /* overflow: hidden; */
 }
 
 .img-texts {

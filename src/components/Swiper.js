@@ -13,6 +13,18 @@ const SwiperGallery = () => {
     const swiper = new Swiper('.swiper', {
         modules: [Navigation],
 
+        observer: true,
+        observeParents: true,
+
+        rebuildOnUpdate: true,
+
+        lazy: {
+            //  tell swiper to load images before they appear
+            loadPrevNext: true,
+            // amount of images to load
+            loadPrevNextAmount: 2,
+        },
+
         breakpoints: {
             // when window width is >= 320px
             320: {
@@ -33,8 +45,14 @@ const SwiperGallery = () => {
             prevEl: '.swiper-button-prev',
         },
     });
+
+    setTimeout(() => {
+        swiper.update();
+    }, 1000);
+
     swiper.allowSlideNext = true;
     console.log(swiper.activeIndex);
+
     return (
         <div className="swiper">
             <div className="swiper-wrapper">

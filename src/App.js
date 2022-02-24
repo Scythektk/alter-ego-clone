@@ -1,10 +1,12 @@
+import Contact from './components/Contact.js';
 import Video from './components/Video.js';
 import ParallelImages from './components/ParallelImages.js';
 import Quote from './components/Quote.js';
 import SwiperGallery from './components/Swiper.js';
+import ParallaxApp from './components/ScrollParallax.js';
 
 function App() {
-    var videoContainer = document.querySelector('.video-container');
+    var heading = document.querySelector('.heading');
 
     function fadeOutOnScroll(element) {
         var heading = document.querySelector('.heading');
@@ -29,7 +31,7 @@ function App() {
     }
 
     function scrollHandler() {
-        fadeOutOnScroll(videoContainer);
+        fadeOutOnScroll(heading);
     }
 
     window.addEventListener('scroll', scrollHandler);
@@ -41,27 +43,12 @@ function App() {
                 className="burger"
                 onclick="this.classList.toggle('active');"
             ></button>
-            <div className="contact-container">
-                <div className="dropup">
-                    <a href="#call" className="icon" id="phone">
-                        CALL US
-                    </a>
-                    <a href="#whatsapp" className="icon" id="whatsapp">
-                        WHATSAPP
-                    </a>
-                    <a href="#telegram" className="icon" id="telegram">
-                        TELEGRAM
-                    </a>
-                    <a href="#email" className="icon" id="email">
-                        EMAIL US
-                    </a>
-                </div>
-                <div className="contact-btn"></div>
-            </div>
+            <Contact></Contact>
             <Video></Video>
             <ParallelImages></ParallelImages>
             <Quote></Quote>
             <SwiperGallery></SwiperGallery>
+            <ParallaxApp></ParallaxApp>
         </div>
     );
 }
