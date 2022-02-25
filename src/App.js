@@ -3,7 +3,7 @@ import Video from './components/Video.js';
 import ParallelImages from './components/ParallelImages.js';
 import Quote from './components/Quote.js';
 import SwiperGallery from './components/Swiper.js';
-import ParallaxApp from './components/ScrollParallax.js';
+// import ParallaxApp from './components/ScrollParallax.js';
 
 function App() {
     var heading = document.querySelector('.heading');
@@ -48,7 +48,7 @@ function App() {
             <ParallelImages></ParallelImages>
             <Quote></Quote>
             <SwiperGallery></SwiperGallery>
-            <ParallaxApp></ParallaxApp>
+            {/* <ParallaxApp></ParallaxApp> */}
         </div>
     );
 }
