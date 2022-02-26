@@ -4,9 +4,48 @@
     scroll-snap-align: start;
 }
 
+.dark-swiper {
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: start;
+    background-color: #18191b;
+}
+
+.swiper-scrollbar {
+    position: absolute;
+    color: pink;
+    scroll-margin-bottom: 10px;
+}
+
 .swiper-slide img {
     position: absolute;
     width: 50vw;
     height: 40vw;
     top: 15vh;
+}
+
+#aeroplane {
+    transform: translate(-10vw, -10vw) scale(0.8);
+    z-index: -9;
+}
+
+#flowers {
+    transform: translate(-20vw, 10vw) scale(0.6);
+    z-index: -10;
+}
+
+#hauntedHouse {
+    transform: translate(-5vw, -8vw) scale(0.9);
+}
+
+#matrix {
+    transform: translate(-10vw, 10vw) scale(0.5);
+}
+
+#newYork {
+    transform: translate(10vw, -10vw) scale(1);
+}
+
+#sedGirl {
+    transform: translate(-10vw, -10vw) scale(0);
 }

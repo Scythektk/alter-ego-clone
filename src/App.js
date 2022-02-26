@@ -2,7 +2,9 @@ import Contact from './components/Contact.js';
 import Video from './components/Video.js';
 import ParallelImages from './components/ParallelImages.js';
 import Quote from './components/Quote.js';
-import SwiperGallery from './components/Swiper.js';
+import SwiperGallery from './components/SwiperGalleryUno.js';
+import QuoteDos from './components/QuoteDos.js';
+import ScrollGallery from './components/SwiperGalleryScroll.js';
 // import ParallaxApp from './components/ScrollParallax.js';
 
 function App() {
@@ -48,6 +50,8 @@ function App() {
             <ParallelImages></ParallelImages>
             <Quote></Quote>
             <SwiperGallery></SwiperGallery>
+            <QuoteDos></QuoteDos>
+            <ScrollGallery></ScrollGallery>
             {/* <ParallaxApp></ParallaxApp> */}
         </div>
     );

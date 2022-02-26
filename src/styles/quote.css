@@ -5,6 +5,11 @@
     scroll-snap-align: start;
 }
 
+.dark-quote {
+    background-color: #18191b;
+    color: white;
+}
+
 .quote {
     font-family: 'Barlow', sans-serif;
     letter-spacing: -0.5px;
@@ -41,7 +46,7 @@
 
 .find-line {
     margin-top: 5.3vw;
-    border-top: 1px solid black;
+    border-top: 1px solid #18191b;
 }
 
 .moving-text {
