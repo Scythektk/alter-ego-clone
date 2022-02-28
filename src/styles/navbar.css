@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
 .burger {
     display: flex;
     position: fixed;
@@ -23,6 +25,7 @@
     left: 60px;
     height: 36px;
     width: 90px;
+    cursor: pointer;
 }
 
 .burger:before,
@@ -66,5 +69,72 @@
 }
 
 .lang-child {
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #f9f9f9;
+    width: 100.7vw;
+    height: 100vh;
+    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 998;
+    color: white;
+}
+
+.dropdown-content .header {
+    background: #18191b;
+    padding: 16px;
+    color: white;
+    text-align: center;
+    font-family: 'BioRhyme', serif;
+}
+
+.burger-bg:hover + .dropdown-content {
+    display: block;
+}
+
+.column {
+    float: left;
+    width: 15%;
+    padding: 10px;
+    background-color: #18191b;
+    height: 82vh;
+    color: white;
+}
+
+.column a {
+    float: none;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.column a:hover {
+    background-color: #0a0c10;
+}
+
+.row:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.column h3 {
+    padding-left: 1vw;
+    font-family: 'BioRhyme', serif;
+}
+
+.close {
+    color: white;
+    text-align: left;
+    position: absolute;
+    left: 160px;
+    top: 68px;
+    font-family: 'Poppins', sans-serif;
     cursor: pointer;
 }

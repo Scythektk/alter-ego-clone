@@ -5,9 +5,22 @@ import Quote from './components/Quote.js';
 import SwiperGallery from './components/SwiperGalleryUno.js';
 import QuoteDos from './components/QuoteDos.js';
 import ScrollGallery from './components/SwiperGalleryScroll.js';
+import Dropdown from './components/Dropdown.js';
 // import ParallaxApp from './components/ScrollParallax.js';
 
 function App() {
+    window.onload = () => {
+        document
+            .querySelector('.burger-bg')
+            .addEventListener('mouseover', function () {
+                document.querySelector('.dropdown-content').style.display =
+                    'block';
+            });
+        document.querySelector('.close').addEventListener('click', function () {
+            document.querySelector('.dropdown-content').style.display = 'none';
+        });
+    };
+
     var heading = document.querySelector('.heading');
 
     function fadeOutOnScroll(element) {
@@ -46,6 +59,7 @@ function App() {
                 onclick="this.classList.toggle('active');"
             ></button>
             <Contact></Contact>
+            <Dropdown></Dropdown>
             <Video></Video>
             <ParallelImages></ParallelImages>
             <Quote></Quote>
